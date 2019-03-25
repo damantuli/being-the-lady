@@ -1,0 +1,26 @@
+<!DOCTYPE">
+<html>
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>iframe</title>
+
+  <script type="text/javascript">
+  function go(loc) {
+    document.getElementById('calendar').src = loc;
+  }
+  </script>
+</head>
+
+<body>
+  <iframe id="calendar" src="blog.html" width="1000" height="450" frameborder="0" scrolling="yes"></iframe>
+
+  <form method="post">
+    <input name="calendarSelection" type="radio" onclick="go('ebay.html')" />Day
+    <input name="calendarSelection" type="radio" onclick="go('blog-foodtips.html')" />Week
+    <input name="calendarSelection" type="radio" onclick="go('index.html')" />Month
+  </form>
+
+</body>
+
+</html>
